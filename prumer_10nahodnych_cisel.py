@@ -4,9 +4,10 @@
 #4. do proměnné `prumer` ulož průměrnou hodnotu,
 #5. výsledek na závěr vypiš ve formátu:`Průměr náhodných čísel je:  <prumer>`.
 
-from random import choices   #nahodne vybere zadany pocet (k) cisel v rozsahu
-from statistics import mean  #udela prumer (ze zadane promenne)
+from random import choices
+from statistics import mean
 
-nahodna_cisla = choices(range(1001), k=10)
+nahodna_cisla = choices(range(0, 1001), k=10)
 prumer = mean(nahodna_cisla)
 print(f"Průměr náhodných čísel je: {prumer}")
+print("Průměr náhodných čísel je: ", prumer, sep='')
